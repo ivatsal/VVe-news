@@ -1,32 +1,20 @@
+<ngx-loading-bar color="white" height="5px" [includeSpinner]="false"></ngx-loading-bar>
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
-  </button>
-  <span>VVe News</span>
-  <span class="example-spacer"></span>
-  <span>TRENDING</span>
-  <span class="example-spacer"></span>
-  <span>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill"
-      viewBox="0 0 16 16">
-      <path
-        d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z" />
-    </svg>
-    BUSINESS
+  </button> -->
+  <span style="text-align: center; margin-top: 15px; cursor: pointer;" routerLink="home">VVe News <br>
+    <h6>Breaking News, Breaking Boundaries</h6>
   </span>
-  <span class="example-spacer"></span>
-  <span>MONEY & MARKETS</span>
-  <span class="example-spacer"></span>
-  <span>TECH</span>
-  <span class="example-spacer"></span>
-  <span><i class="bi bi-person-rolodex"></i>LIFE</span>
-  <span class="example-spacer"></span>
-  <span>TRAVEL</span>
-  <span class="example-spacer"></span>
-  <span>EXECUTIVE</span>
-  <span class="example-spacer"></span>
-  <button mat-raised-button (click)="login()"><i class="bi bi-person-circle"></i> Register
-  </button>
+  <div class="example-spacer"></div>
+  <a mat-button routerLink="trendingnews">TRENDING</a>
+  <a mat-button routerLink="businessnews">BUSINESS</a>
+  <a mat-button routerLink="technews">TECH</a>
+  <a mat-button>MONEY & MARKETS</a>
+  <a mat-button>LIFE</a>
+  <a mat-button>TRAVEL</a>
+  <a mat-button>EXECUTIVE</a>
+  <button mat-raised-button (click)="login()"><i class="bi bi-person-circle"></i> Register</button>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <footer>
