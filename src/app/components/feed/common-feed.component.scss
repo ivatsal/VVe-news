@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: radial-gradient( circle 690px at 8.8% 19%,  rgba(72,81,86,1) 8%, rgba(187,187,187,1) 84.1% );
 
     .header {
         min-height: 150px;
@@ -14,7 +15,7 @@
     }
 
     .image-class {
-        height: 100%;
+        height: 60%;
     }
 
     .news-description {

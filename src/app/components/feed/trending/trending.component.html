@@ -1,6 +1,6 @@
-<h4>Top Heading</h4>
+<!-- <h4>Top Heading</h4>
 <div class="container">
-    <mat-card class="card" *ngFor="let d of newsfeedDisplay">
+    <mat-card class="card" *ngFor="let d of trendingDisplay">
         <mat-card-header class="header">
             <div mat-card-avatar></div>
             <mat-card-title>{{d.title}}</mat-card-title>
@@ -14,4 +14,5 @@
             <a mat-raised-button color="primary" href="{{d.url}}" target="_blank">Readmore</a>
         </mat-card-actions>
     </mat-card>
-</div>
+</div> -->
+<app-common-feed [newsDisplay]="trendingDisplay"></app-common-feed>

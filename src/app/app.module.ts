@@ -8,16 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NewserviceService } from "./service/newservice.service";
-import { TechComponent } from './components/feed/newsfeed/tech/tech.component';
 import { EmpAddEditComponent } from './components/register form/login/emp-add-edit/emp-add-edit.component';
 import { LoginComponent } from './components/register form/login/login.component';
 import { ForgotPasswordComponent } from './components/register form/login/forgot-password/forgot-password.component';
-import { NewsfeedComponent } from './components/feed/newsfeed/newsfeed.component';
+import { NewsfeedComponent } from './components/feed/home/newsfeed.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { MaterialModulesModule } from './material-modules/material-modules.module';
-import { BusinessComponent } from './components/feed/newsfeed/business/business.component';
-import { TrendingComponent } from './components/feed/newsfeed/trending/trending.component';
+import { TrendingComponent } from './components/feed/trending/trending.component';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { CommonFeedComponent } from './components/feed/common-feed.component';
+import { TechComponent } from './components/feed/tech/tech.component';
+import { BusinessComponent } from './components/feed/business/business.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } fro
     NewsfeedComponent,
     TechComponent,
     BusinessComponent,
-    TrendingComponent
+    TrendingComponent,
+    CommonFeedComponent
   ],
   imports: [
     BrowserModule,

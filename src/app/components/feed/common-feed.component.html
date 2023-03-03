@@ -1,6 +1,6 @@
-<h4>Top Heading</h4>
 <div class="container">
-    <mat-card class="card" *ngFor="let d of techDisplay">
+    <mat-card class="card" *ngFor="let d of newsDisplay"
+        style="background:linear-gradient(to right, #ece9e6, #ffffff);">
         <mat-card-header class="header">
             <div mat-card-avatar></div>
             <mat-card-title>{{d.title}}</mat-card-title>
@@ -11,7 +11,7 @@
             <p class="news-description">{{d.description}}</p>
         </mat-card-content>
         <mat-card-actions>
-            <a mat-raised-button color="primary" href="{{d.url}}" target="_blank">Readmore</a>
+            <a mat-raised-button href="{{d.url}}" target="_blank">Read More</a>
         </mat-card-actions>
     </mat-card>
 </div>

@@ -1,9 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BusinessComponent } from './components/feed/newsfeed/business/business.component';
-import { NewsfeedComponent } from './components/feed/newsfeed/newsfeed.component';
-import { TechComponent } from './components/feed/newsfeed/tech/tech.component';
-import { TrendingComponent } from './components/feed/newsfeed/trending/trending.component';
+import { BusinessComponent } from './components/feed/business/business.component';
+import { NewsfeedComponent } from './components/feed/home/newsfeed.component';
+import { TechComponent } from './components/feed/tech/tech.component';
+import { TrendingComponent } from './components/feed/trending/trending.component';
 
 const routes: Routes = [
   { path: '', component: NewsfeedComponent },
